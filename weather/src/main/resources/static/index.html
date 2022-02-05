@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weather">
+<head>
+    <title>Page</title>
+    <script src="angular.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div ng-controller="location">
+            Enter City name
+            <input type="text" ng-model="city"/>
+            <button ng-click="getWeather(city)">Submit</button>
+        </div>
+    </div>
+</body>
